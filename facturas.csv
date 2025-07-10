@@ -1,0 +1,3 @@
+nombre,correo,telefono,rfc,folio,forma_pago,fecha_consumo,importe_consumo,calle,colonia,localidad,municipio,estado,codigo_postal,regimen_fiscal,uso_cfdi
+Angel,hergroanli@gmail.com,2283215046,HEGA0304035D,1,EFECTIVO,2200-03-04,200,AV.XALAPA,REVO,XALAPA,XALAPA,VER,91200,610,I04
+SDS,info@sck.com,21,12,1,23,0123-03-12,123,123,123,123,123,123,123,622,I02
