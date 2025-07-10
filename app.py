@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 import csv
 import os
 
-app = Flask(__name__)
+app = Flask(_name_)
 
 CSV_FILE = 'facturas.csv'
 
