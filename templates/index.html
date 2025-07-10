@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Factura</title>
+    <style>
+        body { background-color: black; color: white; font-family: Arial, sans-serif; }
+        form { max-width: 900px; margin: auto; padding: 20px; }
+        input, select { width: 100%; padding: 8px; margin: 5px 0; }
+        button { background-color: white; color: black; padding: 10px; width: 100%; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">SAMARA KITCHEN & BAR</h2>
+    <form action="/extra1" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="correo" placeholder="Correo" required>
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+        <input type="text" name="rfc" placeholder="RFC" required>
+        <input type="text" name="folio" placeholder="Folio" required>
+        <input type="text" name="forma_pago" placeholder="Forma de pago" required>
+        <input type="date" name="fecha_consumo" required>
+        <input type="number" step="0.01" name="importe_consumo" placeholder="Importe" required>
+        <input type="text" name="calle" placeholder="Calle y número" required>
+        <input type="text" name="colonia" placeholder="Colonia" required>
+        <input type="text" name="localidad" placeholder="Localidad" required>
+        <input type="text" name="municipio" placeholder="Municipio" required>
+        <input type="text" name="estado" placeholder="Estado" required>
+        <input type="text" name="codigo_postal" placeholder="Código Postal" required>
+
+        <select name="regimen_fiscal" required>
+            <option value="">Régimen Fiscal (Requerido)</option>
+            <option value="601">601 - General de Ley Personas Morales</option>
+            <option value="603">603 - Personas Morales con Fines no Lucrativos</option>
+            <option value="610">610 - Residentes en el Extranjero sin Establecimiento Permanente en México</option>
+            <option value="620">620 - Sociedades Cooperativas de Producción</option>
+            <option value="622">622 - Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras</option>
+            <option value="623">623 - Opcional para Grupos de Sociedades</option>
+            <option value="624">624 - Coordinados</option>
+            <option value="626">626 - Régimen Simplificado de Confianza</option>
+        </select>
+
+        <select name="uso_cfdi" required>
+            <option value="">Uso del CFDI (Requerido)</option>
+            <option value="G01">G01 - Adquisición de mercancías</option>
+            <option value="G02">G02 - Devoluciones, descuentos o bonificaciones</option>
+            <option value="G03">G03 - Gastos en general</option>
+            <option value="I01">I01 - Construcciones</option>
+            <option value="I02">I02 - Mobiliario y equipo de oficina</option>
+            <option value="I04">I04 - Equipo de cómputo y accesorios</option>
+            <option value="I05">I05 - Dados, troqueles, moldes</option>
+            <option value="I06">I06 - Comunicaciones telefónicas</option>
+            <option value="I08">I08 - Otra maquinaria y equipo</option>
+            <option value="S01">S01 - Sin efectos fiscales</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
